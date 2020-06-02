@@ -24,8 +24,9 @@ namespace SampleQuestions
         protected override async void OnInitialized()
         {
             InitializeComponent();
-
+            XF.Material.Forms.Material.Init(this);
             await NavigationService.NavigateAsync("NavigationPage/MainPage");
+       
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
