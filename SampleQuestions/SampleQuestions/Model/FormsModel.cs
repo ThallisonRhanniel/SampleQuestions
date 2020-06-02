@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 
 namespace SampleQuestions.Model
 {
+    //As variaveis estão em português porque o Json original está assim.
     public class FormsModel
     {
         [JsonProperty("formularioId")]
@@ -35,10 +36,10 @@ namespace SampleQuestions.Model
         public string Descricao { get; set; }
 
         [JsonProperty("questoes")]
-        public List<Questoes> Questoes { get; set; }
+        public List<Questao> Questoes { get; set; }
     }
 
-    public class Questoes
+    public class Questao
     {
         [JsonProperty("formularioAreaId")]
         public string FormularioAreaId { get; set; }
@@ -65,7 +66,7 @@ namespace SampleQuestions.Model
         public string ExpressaoCalculoMobile { get; set; }
 
         [JsonProperty("listaRespostas")]
-        public List<long> ListaRespostas { get; set; }
+        public List<string> ListaRespostas { get; set; }
     }
 
 }
