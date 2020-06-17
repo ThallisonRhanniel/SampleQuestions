@@ -15,23 +15,63 @@ namespace SampleQuestions.Helpers
             {
                 'formularioId': '1e57c32e-8819-4c71-9269-abc2018879de',
                 'formularioAreaId': '25173f8f-8b5d-415b-91dd-abc2018879df',
-                'descricao': 'Atendimento',
+                'descricao': 'Feedback',
                 'questoes': [
                     {
                         'formularioAreaId': '25173f8f-8b5d-415b-91dd-abc2018879df',
                         'tipoResposta': 7,
                         'item': 1,
-                        'descricao': 'Qual sua avaliação em relação a pontualidade',
+                        'descricao': 'Qual sua avaliação em relação a Steven?',
                         'identificador': 'qual-sua-avaliacao-em-relacao-a-pontualidade',
                         'expressaoCalculo': '',
                         'expressaoExibicao': '',
                         'expressaoCalculoMobile': null,
                         'listaRespostas': [
-                            '1',
-                            '2',
-                            '3',
-                            '5'
+                            'Ruim',
+                            'Bom',
+                            'Ótimo',
+                            'Perfeito'
                         ]
+                    }
+                ]
+            },
+            {
+                'formularioId': 'fcb44c77-322d-48d9-8659-aba700ece239',
+                'formularioAreaId': '25173f8f-8b5d-415b-91dd-abc2018879df',
+                'descricao': 'Outro campo de pergunta',
+                'questoes': [
+                    {
+                        'formularioAreaId': '25173f8f-8b5d-415b-91dd-abc2018879df',
+                        'tipoResposta': 4,
+                        'item': 1,
+                        'descricao': 'IMC',
+                        'identificador': 'imc',
+                        'expressaoCalculo': '',
+                        'expressaoExibicao': '',
+                        'expressaoCalculoMobile': '[peso] / ( [altura] * [altura] )',
+                        'listaRespostas': []
+                    },
+                    {
+                        'formularioAreaId': '25173f8f-8b5d-415b-91dd-abc2018879df',
+                        'tipoResposta': 4,
+                        'item': 1,
+                        'descricao': 'Peso',
+                        'identificador': 'peso',
+                        'expressaoCalculo': '',
+                        'expressaoExibicao': '',
+                        'expressaoCalculoMobile': '',
+                        'listaRespostas': []
+                    },
+                    {
+                        'formularioAreaId': '25173f8f-8b5d-415b-91dd-abc2018879df',
+                        'tipoResposta': 4,
+                        'item': 1,
+                        'descricao': 'Altura',
+                        'identificador': 'altura',
+                        'expressaoCalculo': '',
+                        'expressaoExibicao': '',
+                        'expressaoCalculoMobile': '',
+                        'listaRespostas': []
                     }
                 ]
             }
@@ -104,7 +144,14 @@ namespace SampleQuestions.Helpers
         public static string EndLabelTitleForms = "'/>";
 
 
+        public static string StartDecimalTextField = 
+            @"<Entry TextColor='DimGray' 
+            BackgroundColor='Transparent'
+            Keyboard='Numeric'
+            HorizontalOptions='FillAndExpand' 
+            x:Name='";
 
+        public static string EndDecimalTextField = @"' />";
 
 
 
